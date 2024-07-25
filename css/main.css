@@ -1,0 +1,167 @@
+body{
+  font-family: 'Roboto Condensed', sans-serif;
+  background-color: #f3f3f3;
+  margin: 0;
+  text-transform: uppercase;
+  font-size: 16px;
+}
+
+.container{
+  padding: 0 15px;
+  max-width: 1080px;
+  margin: 0 auto;
+}
+
+
+/* BUTTONS */
+.btn{
+  display: inline-block;
+  flex: 1;
+  text-align: center;
+  text-decoration: none;
+  border: solid 1px #202020;
+  background-color: #202020;
+  color: #fff;
+  padding: 12px;
+  font-weight: 700;
+  font-size: 16px;
+  transition: all .4s;
+}
+
+.btn:hover{
+  background-color: #fff;
+  color: #202020;
+}
+
+
+/* HEADER */
+header{
+  background-color: #202020;
+}
+
+header h1{
+  color: #fff;
+  text-align: center;
+  margin: 0;
+}
+
+header h1 span{
+  background-color: #ec1d24;
+  padding: 5px;
+  display: inline-block;
+}
+
+
+/* SEARCH BAR */
+.search-bar{
+  background-color: #fff;
+  padding: 20px 0;
+}
+
+.search-bar .container{
+  display: flex;
+  justify-content: center;
+}
+
+.search-bar form{
+  display: flex;
+  gap: 10px;
+  width: 100%;
+  flex-direction: column;
+  max-width: 600px;
+}
+
+.search-bar input{
+  padding: 15px;
+  width: 100%;
+  text-align: center;
+  box-sizing: border-box;
+  background-color: #fff;
+  border: solid 1px #ddd;
+  transition: all .4s;
+  font-size: 16px;
+}
+
+.search-bar input:focus{
+  outline: none;
+  border-color: #202020;
+}
+
+.search-bar button{
+  cursor: pointer;
+  padding: 15px 30px;
+  text-transform: uppercase;
+}
+
+
+/* RESULTS */
+.results{
+  padding: 40px 0;
+}
+
+#app{
+  display: flex;
+  justify-content: center;
+}
+.hero{
+  width: 300px;
+  background-color: #fff;
+  padding: 20px;
+}
+
+.hero img{
+  width: 100%;
+  height: 300px;
+  object-fit: cover;
+}
+
+.hero h3{
+  margin: 15px 0 20px 0;
+  font-size: 32px;
+  text-transform: uppercase;
+  text-align: center;
+}
+
+.hero .description{
+  font-weight: 400;
+  font-size: 16px;
+  text-align: center;
+  line-height: 1.4;
+  text-transform: initial;
+  margin-bottom: 30px;
+  font-family: 'Roboto', sans-serif;
+}
+
+.hero .buttons{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 20px;
+}
+
+.hero .buttons .btn{
+  background-color: #fff;
+  color: #202020;
+}
+
+.hero .buttons .btn:hover{
+  color: #fff;
+  background-color: #202020;
+}
+
+
+/* RESPONSIVE */
+@media screen and (min-width:768px) {
+  .search-bar form{
+    flex-direction: row;
+    gap: 0;
+  }
+  .search-bar input{ 
+    flex: 2;
+    text-align: left;
+  }
+  .search-bar button{
+    flex: 1;
+    max-width: max-content;
+  }
+}
